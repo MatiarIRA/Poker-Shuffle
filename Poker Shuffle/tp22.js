@@ -1,7 +1,8 @@
 ﻿/*
 Fichier:	tp2.js
-Auteurs:	Louis-Edouard LAFONTANT
-			Mohammad Hossein ERFANIAN AZMOUDEH
+Auteurs:	Mohammad Hossein ERFANIAN AZMOUDEH
+		Louis-Edouard LAFONTANT
+			
 
 Ce programme web permet de simuler le jeu "poker shuffle".
 Nombre de joueur: 1
