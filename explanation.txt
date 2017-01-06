@@ -1,0 +1,65 @@
+Table
+deck
+
+var index= 0; //we need to that for 
+
+//clicking on deck => cardID=25
+if(cardID=25){//after verifying weather any cell of the table is selected or not,there are two main possiblities
+// 1- deck is not selected 2- deck is selected
+	if(cell(id) == unselected){
+		if(deck == unselected){ //in case unselected there is two posibilities 1- deck shows back 2- deck shows a face
+			if(deck = back){
+				deck = selected;//means the color changes to green
+				back(53) = randomcard(index++); //back card changes to the first one on the randomcard
+			}else if(deck = a face){
+				deck = selected;
+			}
+
+		}else if (deck == selected){//means it has now a face and it's green
+			deck = unselected; //means background color returns to unselected form
+		}
+	}else if(cell(id) == selected){
+		cell(id) = unselected;
+		deck = selected;
+		back(53) = randomcard(index++);
+	}
+
+	
+//clicking on the table
+else(cardID<25){
+	if(deck == unselected){//there are two possibilities 1- cell is empty 2- cell has sth but both state has same value!
+//but there are two possibilites more important	1- if no cell is already selected 2- another cell is already selected	
+		
+		if(cell(id)/*the old one*/ == unselected){
+			NOTHING!!!! //***empty cells are not selectable ***
+
+		}else if(cell(id)/*the old one*/ == selected){
+			cell(id)/*the old one*/ = unselected;
+			//cell(id)/*the new one*/ = selected; YOU DON'T NEED THAT!
+			cell(id)/*the new one*/ <=> cell(id)/*the old one*/; //changing contain between the old and new one
+		}
+	else(deck == selected){//there are two possibilities 1- cell is empty 2- cell is not empty
+		if(cell(id) == empty){
+			//cell(id) = selected;YOU DON'T NEED THAT!
+			cell(id) = deck;
+			deck = unselected;
+			deck = back;
+		}else if(cell(id) !== empty){
+			alert("select an empty cell please");
+			cell(id) = selected; 
+		}
+	
+			
+		
+
+		
+
+
+
+
+
+
+
+
+
+
